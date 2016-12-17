@@ -10,19 +10,20 @@ body {
 }
 
 .wrapper {
-    width: 1066px;
     margin: 0 auto;
-    padding: 50px 50px 60px;
-    box-shadow: 0px 0px 8px 0px rgba(158,158,158,1);
-    background-color: #ffffff;
+    margin-right: 309px;
+    margin-left: 72px;
+    padding: 50px 60px 60px 54px;
+    background-color: #fff;
     font: 13px 'OpenSans', sans-serif;
+    box-shadow: 0 0 8px 0 rgba(158, 158, 158, 1);
+    overflow: hidden;
 }
 
-/* HEADER */
+    /* HEADER */
 
 .header {
-    width: 1066px;
-    height: 123px;
+    margin: -4px 0 0 -9px;
 }
 
 nav {
@@ -31,73 +32,66 @@ nav {
 }
 
 .top-menu {
-    width: 1066px;
+    width: 968px;
     height: 40px;
-    margin: 40px 0;
-	background: linear-gradient(to top, #444343 0%, #5e5e5e 100%);
+    margin: 36px 0;
+    background: linear-gradient(to top, #444343 0%, #5e5e5e 100%);
+}
+
+.top-menu li {
+    display: inline-block;
+    padding-right: 32px;
+    float: left;
+}
+
+.top-menu li:hover {
+    outline: 1px solid #838383;
+    outline-offset: -1px;
+    background: linear-gradient(to top, #2e2e2e 0%, #444 100%);
 }
 
 .top-menu a {
-    text-decoration: none;
     display: block;
+    margin-left: -5px;
     padding: 10px 30px;
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
     color: #fff;
     font-size: 14px;
+    text-decoration: none;
 }
 
-.top-menu li {
-    display: inline-block;
-    float: left;
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    content: '';
+    visibility: hidden;
 }
-
-.top-menu li:hover {
-	background: linear-gradient(to top, #2e2e2e 0%, #444444 100%);
-	/*border-right: 1px solid #838383;
-	border-left: 1px solid #838383;
-	background-clip: border-box;*/
-	outline: 1px solid #838383;
-	outline-offset: -1px;
-}
-
-.box:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-
-.box { display: inline-block; }
-/* start commented backslash hack \*/
-* html .box { height: 1%; }
-.box { display: block; }
-/* close commented backslash hack */
 
 .box {
-    width: 1066px;
+    width: 968px;
+    margin-left: -8px;
 }
 
-/* SIDEBAR */
+    /* SIDEBAR */
 
 .sidebar {
     display: block;
+    margin-top: 2px;
     float: left;
-    border-top: 1px solid #c8c8c8;
+}
+
+.sidebar li {
+    width: 216px;
+    padding-left: 22px;
+    border: 1px solid #c8c8c8;
+    line-height: 38px;
 }
 
 .sidebar a {
     text-decoration: none;
-}
-
-.sidebar li {
-    width: 240px;
-	height: 40px;
-    padding-left: 22px;
-    line-height: 40px;
-    border: 1px solid #c8c8c8;
 }
 
 .sidebar li a {
@@ -105,59 +99,63 @@ nav {
 }
 
 .sidebar li a:hover {
-    padding-left: 35px;
-    color: #2c2c2c;
+    padding-left: 13px;
     background-color: #f9f9f9;
+    color: #2c2c2c;
 }
 
-/* CONTENT */
+    /* CONTENT */
+
+.img {
+    margin-top: 4px;
+    padding: 44px 88px;
+    float: right;
+    outline: 1px solid #c8c8c8;
+}
 
 .content {
     width: 700px;
+    padding-right: 3px;
     float: right;
 }
 
 .content p {
     display: inline-block;
-     text-align: left;
+    padding: 34px 20px 24px 47px;
+    line-height: 1.65;
+    text-align: left;
     overflow: hidden;
-    padding: 24px 30px 24px;
-    line-height: 1.6;
 }
 
-.img {
-    float: right;
-    width: 500px;
-    height: 307px;
-    outline: 2px solid #c8c8c8;
-    padding: 60px 100px;
-}
-
-/* FOOTER */
+    /* FOOTER */
 
 .footer {
-    float: left;
-    width: 1066px;
+    width: 968px;
     height: 40px;
+    margin-top: 31px;
+    margin-left: -8px;
+    float: left;
     background-color: #e1e1e1;
 }
 
 .footer-menu li {
     display: inline-block;
+    margin-right: 46px;
+    margin-bottom: 0;
+    padding: 11px 24px 9px;
     float: left;
-    padding: 14px 24px 9px;
 }
 
 .footer-menu a {
-    text-decoration: none;
     color: #2c2c2c;
+    text-decoration: none;
 }
 
 .footer-menu li:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .copy {
+    padding: 11px 27px;
     float: right;
-    padding: 14px 24px;
 }
