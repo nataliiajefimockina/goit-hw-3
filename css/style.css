@@ -10,12 +10,14 @@ body {
 }
 
 .wrapper {
+    display: inline-block;
+    width: 960px;
     margin: 0 auto;
     margin-right: 309px;
     margin-left: 72px;
-    padding: 50px 60px 60px 54px;
+    padding: 50px 49px 60px 54px;
     background-color: #fff;
-    font: 13px 'OpenSans', sans-serif;
+    font: 13px 'OpenSans', Arial, sans-serif;
     box-shadow: 0 0 8px 0 rgba(158, 158, 158, 1);
     overflow: hidden;
 }
@@ -61,7 +63,7 @@ nav {
     text-decoration: none;
 }
 
-.clearfix:after {
+.clearfix: after {
     display: block;
     height: 0;
     clear: both;
@@ -71,7 +73,7 @@ nav {
 }
 
 .box {
-    width: 968px;
+    width: 960px;
     margin-left: -8px;
 }
 
@@ -86,8 +88,14 @@ nav {
 .sidebar li {
     width: 216px;
     padding-left: 22px;
-    border: 1px solid #c8c8c8;
+    border-top: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
     line-height: 38px;
+}
+
+li:last-child {
+    border-bottom: 1px solid #c8c8c8;
 }
 
 .sidebar a {
@@ -108,20 +116,20 @@ nav {
 
 .img {
     margin-top: 4px;
-    padding: 44px 88px;
+    padding: 46px 78px 42px 89px;
     float: right;
     outline: 1px solid #c8c8c8;
 }
 
 .content {
-    width: 700px;
+    width: 676px;
     padding-right: 3px;
     float: right;
 }
 
 .content p {
     display: inline-block;
-    padding: 34px 20px 24px 47px;
+    padding: 34px 19px 24px 32px;
     line-height: 1.65;
     text-align: left;
     overflow: hidden;
@@ -130,7 +138,7 @@ nav {
     /* FOOTER */
 
 .footer {
-    width: 968px;
+    width: 960px;
     height: 40px;
     margin-top: 31px;
     margin-left: -8px;
@@ -142,7 +150,7 @@ nav {
     display: inline-block;
     margin-right: 46px;
     margin-bottom: 0;
-    padding: 11px 24px 9px;
+    padding: 11px 24px 17px;
     float: left;
 }
 
@@ -156,6 +164,6 @@ nav {
 }
 
 .copy {
-    padding: 11px 27px;
+    padding: 11px 17px 10px;
     float: right;
 }
