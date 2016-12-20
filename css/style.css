@@ -10,11 +10,8 @@ body {
 }
 
 .wrapper {
-    display: inline-block;
     width: 960px;
     margin: 0 auto;
-    margin-right: 309px;
-    margin-left: 72px;
     padding: 50px 49px 60px 54px;
     background-color: #fff;
     font: 13px 'OpenSans', Arial, sans-serif;
@@ -94,7 +91,7 @@ nav {
     line-height: 38px;
 }
 
-li:last-child {
+.sidebar li:last-child {
     border-bottom: 1px solid #c8c8c8;
 }
 
@@ -123,6 +120,7 @@ li:last-child {
 
 .content {
     width: 676px;
+    margin: 0 auto;
     padding-right: 3px;
     float: right;
 }
