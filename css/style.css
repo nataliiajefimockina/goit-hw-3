@@ -52,9 +52,9 @@ nav {
 .top-menu a {
     display: block;
     margin-left: -5px;
-    padding: 10px 30px;
-    border-right: 1px solid transparent;
-    border-left: 1px solid transparent;
+    padding: 10.5px 30px;
+/* border-right: 1px solid transparent; */
+/* border-left: 1px solid transparent; */
     color: #fff;
     font-size: 14px;
     text-decoration: none;
@@ -103,10 +103,13 @@ nav {
     color: #656363;
 }
 
-.sidebar li a:hover {
-    padding-left: 13px;
-    background-color: #f9f9f9;
-    color: #2c2c2c;
+.sidebar li:hover a {
+padding-left: 13px;
+color: #2c2c2c;
+}
+
+.sidebar li:hover {
+background-color: #f9f9f9;
 }
 
     /* CONTENT */
